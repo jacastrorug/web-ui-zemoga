@@ -1,3 +1,11 @@
+:root {
+  --like-color: #269590;
+  --dislike-color: #cf942f;
+  --font-light-color: #ebebeb;
+  --font-dark-color: #333333;
+  --font-menu: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +14,48 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Lato', sans-serif, serif;
+  color: var(--font-light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+.icon {
+  display: inline-block;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-like {
+  background-image: url('../resources/svg/like.svg');
+  background-repeat: no-repeat;
+}
+
+.icon-dislike {
+  background-image: url('../resources/svg/dislike.svg');
+  background-repeat: no-repeat;
+}
+
+.icon-close {
+  background-image: url('../resources/svg/cancel.svg');
+  background-repeat: no-repeat;
 }

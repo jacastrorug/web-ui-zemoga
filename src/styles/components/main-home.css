@@ -1,0 +1,229 @@
+/*
+1. Main
+*/
+
+main {
+  margin: 0 10vw;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  background-color: var(--font-light-color);
+  width: 100%;
+  color: var(--font-dark-color);
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.message_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.message_subtitle {
+  font-size: 2.1rem;
+}
+
+.message_title_bold {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.message_text {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 0 3rem;
+  font-size: 1.4rem;
+}
+
+.message_close {
+  position: absolute;
+  left: 87%;
+}
+
+/*
+  2. Participants
+  */
+
+.participants_section {
+  margin-bottom: 3rem;
+}
+
+.participants_section > h5 {
+  font-size: 4rem;
+  color: var(--font-dark-color);
+  margin-bottom: 3rem;
+}
+
+.participants_section_content {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.participants_section_card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 50rem;
+}
+
+.kanye {
+  background-image: url('../../resources/img/kanye.png');
+}
+
+.mark {
+  background-image: url('../../resources/img/mark.png');
+}
+
+.cristina {
+  background-image: url('../../resources/img/cristina.png');
+}
+
+.malala {
+  background-image: url('../../resources/img/malala.png');
+}
+
+.participants_section_card_content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4rem auto;
+}
+
+.participants_section_card_higuer {
+  align-self: end;
+}
+
+.participants_section_card_higuer_icon {
+  background-color: var(--like-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+}
+
+.participants_section_card_title {
+  font-size: 4.5rem;
+}
+
+.participants_section_card_principal_content {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.participants_section_card_principal_content > h5 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.participants_section_card_description {
+  font-size: 1.6rem;
+}
+
+.participants_section_card_votes_section {
+  display: flex;
+  align-items: center;
+}
+
+.participants_section_card_votes_section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.button_like {
+  border: 0;
+  background-color: var(--like-color);
+}
+
+.button_like.selected {
+  border: 0.1rem solid #ebebeb;
+}
+
+.button_dislike {
+  border: 0;
+  background-color: var(--dislike-color);
+}
+
+.button_dislike.selected {
+  border: 0.1rem solid #ebebeb;
+}
+
+.participants_section_card_votes_section {
+  margin-top: 2rem;
+}
+
+.participants_section_card_votes_section > .button_vote {
+  background-color: transparent;
+  font-size: 1.4rem;
+  height: 4rem;
+  width: 9rem;
+  border: 0.1rem solid #ebebeb;
+  color: var(--font-light-color);
+}
+
+.participants_section_card_status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  opacity: 0.8;
+}
+
+.participants_section_card_status_likes {
+  width: 64%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: var(--like-color);
+}
+
+.participants_section_card_status_icon {
+  padding: 0 1rem;
+}
+
+.participants_section_card_status_icon > .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.participants_section_card_status_text {
+  font-size: 2.9rem;
+}
+
+.participants_section_card_status_dislikes {
+  width: 36%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: var(--dislike-color);
+}
+
+@media (min-width: 600px) {
+  .main-header {
+    padding: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .participants_section_content {
+    grid-template-columns: 1fr;
+  }
+}

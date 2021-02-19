@@ -1,0 +1,163 @@
+/*
+0. Header
+*/
+
+.main_header {
+  color: var(--font-menu);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  position: relative;
+  background-image: url('../../resources/img/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.main_header .background_menu {
+  z-index: 0;
+  width: 100%;
+  height: 20rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: transparent;
+}
+
+.main_header .main_header_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  background-color: rgba(1, 1, 1, 0.1);
+}
+
+.main_header_title > h3 {
+  margin: 0;
+  font-size: 3.2rem;
+  width: 40%;
+}
+
+.main_header_main_nav {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main_header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_header_nav_list li {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-left: 1.6rem;
+}
+
+.main_header_nav_list li > a {
+  text-decoration: none;
+  color: var(--font-light-color);
+}
+
+/*
+0.1 Hero card
+*/
+.main_header_hero_card {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 45rem;
+  margin-bottom: 20rem;
+}
+
+.main_header_hero_card > article {
+  padding: 0 3rem;
+  background-color: rgba(40, 40, 40, 0.5);
+  backdrop-filter: blur(1.5rem);
+}
+
+.main_header_hero_card .hero_card_subtitle {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.hero_card_description {
+  font-size: 2.1rem;
+  margin: 2.5rem 0;
+}
+
+.hero_card_information {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.hero_card_information > a {
+  color: var(--font-menu);
+}
+
+.hero_card_veredict {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.main_header_footer_card {
+  display: flex;
+  width: 100%;
+  opacity: 0.9;
+  height: 6rem;
+}
+
+.main_header_footer_card_like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: var(--like-color);
+}
+
+.main_header_footer_card_dislike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: var(--dislike-color);
+}
+
+.main_header_footer_card .icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.main_header_regresive_count {
+  display: flex;
+  font-size: 1.8rem;
+}
+
+.main_header_regresive_count_closing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 33%;
+  height: 4rem;
+  background: rgba(120, 120, 120, 0.4);
+}
+
+.main_header_regresive_count_days {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  width: 67%;
+  height: 4rem;
+  color: var(--font-dark-color);
+  background-color: rgba(255, 255, 255, 0.7);
+}
